@@ -1,5 +1,5 @@
 # Types
-- Integer "[-9999 - 9999]"
+- Integer "[-255 - 255]"
 - Register "#[Register Number, 0000 - 9999]"
 - Label "?[Label Name]"
 - External Code "$[Code]"
