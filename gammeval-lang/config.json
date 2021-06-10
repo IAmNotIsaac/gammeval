@@ -1,0 +1,9 @@
+{
+	"program": {
+		"hierarchy": {
+			"main": "scripts/main.gmv",
+			"alt": "scripts/alt.gmv",
+			"testpy": "scripts/test.py"
+		}
+	}
+}

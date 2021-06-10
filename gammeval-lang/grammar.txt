@@ -1,0 +1,32 @@
+# Types
+- Integer "[-9999 - 9999]"
+- Register "#[Register Number, 0000 - 9999]"
+- Label "?[Label Name]"
+- External Code "$[Code]"
+
+# Opcodes
+- NOP.....................................................................No operation
+
+- OUT <Register|Integer|String|External Code>*............................Output to terminal
+
+- SET <Register> <Register|Integer>.......................................Set register to value
+- ADD <Register> <Register|Integer>.......................................Add and set value to register value
+- SUB <Register> <Register|Integer>.......................................Subtract and set value to register value
+- MUL <Register> <Register|Integer>.......................................Multiply and set value to register value
+- DIV <Register> <Register|Integer>.......................................Divide and set value to register value
+
+- JUMP <Label>............................................................Jump to label
+- JUMPO <Integer>.........................................................Jump down/up number of lines
+- JUMPF <String>..........................................................Jump to file
+- JUMPFL <String> <Label>.................................................Jump to file and label
+
+- QUERY <Register|Integer> <Register|Integer> <String>*...................Execute opcode if left equals right
+- QUERYN <Register|Integer> <Register|Integer> <String>*..................Execute opcode if left doesn't equal right
+- QUERYG <Register|Integer> <Register|Integer> <String>*..................Execute opcode if left is greater than right
+- QUERYL <Register|Integer> <Register|Integer> <String>*..................Execute opcode if left is less than right
+
+- PYTHON <External Code>*.................................................Run python code
+- PYTHONF <String>........................................................Run python file
+
+- RET.....................................................................Return to last jump call
+- END.....................................................................End program
